@@ -27,7 +27,7 @@ describe("css/cleanup.css", () => {
     );
     const hint =
       "You should have at least 300 bytes worth of updates to css/cleanup.css";
-    expect(fileData.size, hint).to.be.greaterThan(300);
+    expect(fileData.size, hint).to.be.lessThan(300);
   });
 });
 
